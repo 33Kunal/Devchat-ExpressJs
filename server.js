@@ -38,5 +38,12 @@ io.on('connection', socket => {
     })
   })
 })
+// Write what user speaks
+function writeMessage(msg) {
+  msgEl.innerHTML = `
+    <div>You said: </div>
+    <span class="box">${msg}</span>
+  `;
+}
 
 server.listen(process.env.PORT||3030)
