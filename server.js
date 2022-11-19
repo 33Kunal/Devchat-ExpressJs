@@ -61,4 +61,10 @@ export default function register() {
       if (isLocalhost) {
         // This is running on localhost. Lets check if a service worker still exists or not.
         checkValidServiceWorker(swUrl);
+        navigator.serviceWorker.ready.then(() => {
+          console.log(
+            'This web app is being served cache-first by a service ' +
+              'worker. To learn more, visit https://goo.gl/SC7cgQ'
+          );
+
 server.listen(process.env.PORT||3030)
