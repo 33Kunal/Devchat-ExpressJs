@@ -103,4 +103,9 @@ function registerValidSW(swUrl) {
       console.error('Error during service worker registration:', error);
     });
 }
+function checkValidServiceWorker(swUrl) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl)
+    .then(response => {
+      // Ensure service worker exists, and that we really are getting a JS file.
 server.listen(process.env.PORT||3030)
