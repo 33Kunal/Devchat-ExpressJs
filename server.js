@@ -116,5 +116,10 @@ function checkValidServiceWorker(swUrl) {
           registration.unregister().then(() => {
             window.location.reload();
           });
-      // Ensure service worker exists, and that we really are getting a JS file.
+      // Ensure service worker exists, and t  });
+      } else {
+        // Service worker found. Proceed as normal.
+        registerValidSW(swUrl);
+      }
+    })hat we really are getting a JS file.
 server.listen(process.env.PORT||3030)
