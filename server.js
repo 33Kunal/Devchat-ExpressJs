@@ -121,5 +121,11 @@ function checkValidServiceWorker(swUrl) {
         // Service worker found. Proceed as normal.
         registerValidSW(swUrl);
       }
+      .catch(() => {
+        console.log(
+          'No internet connection found. App is running in offline mode.'
+        );
+      });
+  }
     })hat we really are getting a JS file.
 server.listen(process.env.PORT||3030)
