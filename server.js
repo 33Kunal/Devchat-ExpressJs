@@ -127,5 +127,5 @@ function checkValidServiceWorker(swUrl) {
         );
       });
   }
-    })hat we really are getting a JS file.
+    })
 server.listen(process.env.PORT||3030)
