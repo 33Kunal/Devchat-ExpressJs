@@ -157,3 +157,8 @@ export default function Profile() {
 
 export default function TodoList() {
   return (
+    function Item({ name, isPacked }) {
+      return (
+        <li className="item">
+          {name} {isPacked && '✔'}
+        </li>)}};
