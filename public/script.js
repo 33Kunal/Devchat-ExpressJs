@@ -162,3 +162,10 @@ export default function TodoList() {
         <li className="item">
           {name} {isPacked && '✔'}
         </li>)}};
+        export default function List() {
+          const listItems = people.map(person =>
+            <li key={person.id}>
+              <img
+                src={getImageUrl(person)}
+                alt={person.name}
+              />
