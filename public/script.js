@@ -169,3 +169,8 @@ export default function TodoList() {
                 src={getImageUrl(person)}
                 alt={person.name}
               />
+              <p>
+        <b>{person.name}:</b>
+        {' ' + person.profession + ' '}
+        known for {person.accomplishment}
+      </p>
