@@ -174,3 +174,12 @@ export default function TodoList() {
         {' ' + person.profession + ' '}
         known for {person.accomplishment}
       </p>
+      </li>
+  );
+  return (
+    <article>
+      <h1>Scientists</h1>
+      <ul>{listItems}</ul>
+    </article>
+  );
+}
