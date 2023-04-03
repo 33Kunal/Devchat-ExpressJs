@@ -238,3 +238,11 @@ export default function Button() {
 <button onClick={() => {
   alert('You clicked me!');
 }}></button>
+
+function AlertButton({ message, children }) {
+  return (
+    <button onClick={() => alert(message)}>
+      {children}
+    </button>
+  );
+}
