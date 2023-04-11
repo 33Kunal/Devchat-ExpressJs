@@ -258,3 +258,10 @@ export default function Toolbar() {
     </div>
   );
 }
+function Button({ onClick, children }) {
+  return (
+    <button onClick={onClick}>
+      {children}
+    </button>
+  );
+}
