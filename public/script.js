@@ -265,3 +265,9 @@ function Button({ onClick, children }) {
     </button>
   );
 }
+function PlayButton({ movieName }) {
+  function handlePlayClick() {
+    alert(`Playing ${movieName}!`);
+  }
+
+
