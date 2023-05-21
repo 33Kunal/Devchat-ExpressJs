@@ -275,5 +275,13 @@ function PlayButton({ movieName }) {
     </Button>
   );
 }
+function UploadButton() {
+  return (
+    <Button onClick={() => alert('Uploading!')}>
+      Upload Image
+    </Button>
+  );
+}
+
 
 
