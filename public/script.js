@@ -282,6 +282,14 @@ function UploadButton() {
     </Button>
   );
 }
+export default function Toolbar() {
+  return (
+    <div>
+      <PlayButton movieName="Kiki's Delivery Service" />
+      <UploadButton />
+    </div>
+  );
+}
 
 
 
