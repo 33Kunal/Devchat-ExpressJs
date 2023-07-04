@@ -309,6 +309,10 @@ export default function App() {
     </div>
   );
 }
-
+export default function Toolbar() {
+  return (
+    <div className="Toolbar" onClick={() => {
+      alert('You clicked on the toolbar!');
+    }}></div>
 
 
